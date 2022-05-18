@@ -1,5 +1,12 @@
 plugins {
     `java-library`
+    `groovy`
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
 }
 
 dependencies {
